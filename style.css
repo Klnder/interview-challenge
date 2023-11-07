@@ -1,0 +1,106 @@
+* {
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: white;
+}
+
+header,
+main {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+h1 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px black;
+}
+
+#main-container {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 130px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "description paiement"
+    "details paiement";
+}
+
+.description {
+  grid-area: description;
+  padding: 1rem;
+}
+
+.details {
+  grid-area: details;
+  padding: 1rem;
+}
+
+.paiement {
+  grid-area: paiement;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+p {
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+button {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 2rem;
+}
+sup {
+  vertical-align: super;
+  font-size: 1rem;
+}
+
+.line {
+  width: 60%;
+  border-top: 1px solid black;
+}
+
+#include-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: blue;
+}
+#include-header > * {
+  margin-right: 10px;
+}
+ul > li {
+  padding: 10px;
+}
